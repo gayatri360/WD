@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechFront 2024 Conference</title>
+</head>
+<body>
+    <header>
+        <h1>TechFront 2024</h1>
+        <p><i>The Future of Innovation, Today.</i></p>
+        <nav>
+            <a href="#schedule">Schedule</a>  
+            <a href="#speakers">Speakers</a> 
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+    <section id="schedule">
+        <h2>Conference Schedule</h2>
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Session Title</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 AM</td>
+                    <td>Opening Keynote: AI Horizons</td>
+                    <td>Main Hall</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Web3 and Global Finance</td>
+                    <td>Room B</td>
+                </tr>
+                <tr>
+                    <td>01:00 PM</td>
+                    <td>Networking Lunch</td>
+                    <td>Garden Court</td>
+                </tr>
+                <tr>
+                    <td>02:30 PM</td>
+                    <td>Cybersecurity Deep Dive</td>
+                    <td>Tech Lab</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+    <section id="speakers">
+        <h2>Featured Speakers</h2>
+        <ul>
+            <li>
+                <strong>Dr. Sarah Chen</strong> - Principal Researcher at AI Labs
+                <p>Expert in neural networks and ethical machine learning.</p>
+            </li>
+            <li>
+                <strong>Marcus Thorne</strong> - Lead Architect, CloudX
+                <p>Pioneer in serverless infrastructure and scalable systems.</p>
+            </li>
+        </ul>
+    </section>
+    <hr>
+    <section id="register">
+        <h2>Register for Tickets</h2>
+        <form action="/submit-registration" method="POST">
+            <p>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label>Select Ticket Tier:</label><br>
+                <input type="radio" id="early" name="tier" value="early">
+                <label for="early">Early Bird ($199)</label>
+                <br>
+                <small>Availability:</small>
+                <meter min="0" max="100" low="20" high="80" optimum="10" value="95"></meter> 95% full
+                <br><br>
+                <input type="radio" id="standard" name="tier" value="standard">
+                <label for="standard">Standard ($350)</label>
+                <br>
+                <small>Availability:</small>
+                <progress value="40" max="100"></progress> 40% sold
+                <br><br>
+                <input type="radio" id="vip" name="tier" value="vip">
+                <label for="vip">VIP Pass ($750)</label>
+                <br>
+                <small>Availability:</small>
+                <progress value="15" max="100"></progress> 15% sold
+            </p>
+
+            <p>
+                <button type="submit">Secure My Spot</button>
+            </p>
+        </form>
+    </section>
+    <hr>
+    <footer>
+        <p>&copy; 2024 TechFront Conference Series. All rights reserved.</p>
+    </footer>
+</body>
+</html>
